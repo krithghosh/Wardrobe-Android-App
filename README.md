@@ -17,8 +17,8 @@ AlarmManager & AlarmReceiver was used to set the notification.
 
 ##Libraries Used :
 
-butterknife
-dagger
-sqlbrite
-rxjava 
-eventbus
+butterknife  
+dagger  
+sqlbrite  
+rxjava  
+eventbus  
