@@ -160,8 +160,8 @@ public class ShirtFragment extends Fragment {
     }
 
     private void selectImage(String msg) {
-        final CharSequence[] items = {getString(R.string.take_photo), getString(R.string.choose_gallery),
-                getString(R.string.cancel)};
+        final CharSequence[] items = {"Take Photo", "Choose from Gallery",
+                "Cancel"};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         builder.setTitle(msg);

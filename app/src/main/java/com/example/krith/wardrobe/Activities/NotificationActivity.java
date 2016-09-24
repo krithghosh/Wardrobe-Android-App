@@ -36,6 +36,9 @@ public class NotificationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
         ButterKnife.bind(this);
+
+        getSupportActionBar().setTitle("Your Combination");
+
         pref = getSharedPreferences(getString(R.string.PREF), MODE_PRIVATE);
 
         String path = pref.getString(getString(R.string.shirt), "");

@@ -22,4 +22,5 @@
     <string name="combination_saved">Your combination is saved</string>
     <string name="add_shirt_image">Add an Image of a Shirt !</string>
     <string name="add_pant_image">Add an Image of a Pant !</string>
+    <string name="home_title">Wardrobe App</string>
 </resources>

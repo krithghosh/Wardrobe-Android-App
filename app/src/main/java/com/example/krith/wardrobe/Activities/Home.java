@@ -59,6 +59,8 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         ButterKnife.bind(this);
 
+        getSupportActionBar().setTitle(R.string.home_title);
+
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.shirtLayout, ShirtFragment.newInstance())
                 .commit();
@@ -77,7 +79,7 @@ public class Home extends AppCompatActivity {
     public void favourite(View view) {
         new FavouriteEvent().post();
         Utility.setNotification(getApplicationContext());
-        Toast.makeText(getApplicationContext(), R.string.combination_saved, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Your combination is saved", Toast.LENGTH_SHORT).show();
     }
 
     @Override
