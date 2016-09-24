@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.krith.wardrobe.Activities.Home">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="@integer/weight_sum_2">
+
+        <FrameLayout
+            android:id="@+id/shirtLayout"
+            android:layout_width="@dimen/no_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/weight_1" />
+
+        <FrameLayout
+            android:id="@+id/pantLayout"
+            android:layout_width="@dimen/no_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/weight_1" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_favourite"
+        style="@style/fab_favourite"
+        android:layout_marginBottom="@dimen/fab_padding"
+        android:layout_marginRight="@dimen/fab_padding"
+        app:layout_anchor="@id/main_layout"
+        app:layout_anchorGravity="center|bottom" />
+
+    <ImageButton
+        android:id="@+id/btn_shuffle"
+        style="@style/fab_shuffle"
+        android:layout_marginBottom="@dimen/fab_padding"
+        android:layout_marginRight="@dimen/fab_padding"
+        app:layout_anchor="@id/main_layout"
+        app:layout_anchorGravity="center" />
+
+</android.support.design.widget.CoordinatorLayout>
