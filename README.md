@@ -3,7 +3,7 @@
 
 This project focuses mainly on fetching images from gallery or clicking via camera and storing the file paths in the Sqllite Database.
 
-The Home activity has two fragments inflated vertically(Portrait mode) & horizontally(landcape mode).
+The Home activity has two fragments inflated vertically(Portrait mode) & horizontally(landscape mode).
 Each Fragment has ViewPager which capable of showing images which which have added to each of the following fragments.
 
 With the help of rx-java it was possible to observe any changes made to the respective tables. If any change in the table was observed, a subscriber is attached which maps the query columns to the List of WardrobeItem and the adapter is updated.
